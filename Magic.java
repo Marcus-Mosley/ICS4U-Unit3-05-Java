@@ -68,10 +68,10 @@ class Magic {
         printArr(arr);
       }
     } else {
-      for (int i = pos; i < 9; i++) {
-        arr = swap(arr, pos, i);
+      for (int count = pos; count < 9; i++) {
+        arr = swap(arr, pos, count);
         solve(arr, pos + 1);
-        arr = swap(arr, pos, i); 
+        arr = swap(arr, pos, count); 
       }
     }
   }
